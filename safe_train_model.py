@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 # Load dataset
-df = pd.read_csv("train.csv")  # update the path if needed
+df = pd.read_csv("train.csv", encoding='latin1') # update the path if needed
 df.dropna(inplace=True)
 
 # Label encode
